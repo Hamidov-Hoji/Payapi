@@ -75,11 +75,6 @@
   font-weight: 700;
 }
 
-.header__humburger-picture {
-  width: 28px;
-  height: 17px;
-}
-
 // media
 @include breakpoint-down(1182px){
     .hero__wrapper {
