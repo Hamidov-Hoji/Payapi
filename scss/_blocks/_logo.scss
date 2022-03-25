@@ -1,8 +1,11 @@
 .logo-link {
-
+  @include link-unstyled;
+  display: block;
 }
 
 .logo-link__picture {
   width: 135px;
   height: 38px;
+  margin-right: 64px;
+  display: inline-block;
 }

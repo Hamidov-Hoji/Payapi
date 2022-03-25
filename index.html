@@ -14,32 +14,60 @@
   <header class="header">
     <div class="container">
       <div class="header__wrapper">
+      <div class="header__inner">
         <h1 class="visually-hidden">Payapi</h1>
         
-        <a class="header__logo-link logo-link" href="">
+        <a class="header__logo-link logo-link" href="./index.html">
           <img class="logo-link__picture" src="./img/header__logo.svg" 
           alt="logo picture" width="135" height="38">
         </a>
-        
-        <nav class="header__header-nav header-nav">
+
+        <nav class="header-nav">
           <ul class="header-nav__list">
-            <li class="header-nav-list">
+            <li class="header-nav-item">
               <a class="header-nav__link" href="">Pricing</a>
             </li>
 
-            <li class="header-nav-list">
+            <li class="header-nav-item">
               <a class="header-nav__link" href="">About</a>
             </li>
 
-            <li class="header-nav-list">
+            <li class="header-nav-item">
               <a class="header-nav__link" href="">Contact</a>
             </li>
           </ul>
         </nav>
       </div>
+
       <button class="header__btn" type="button">Schedule a Demo</button>
+      <a class="header__hamburger" href="#">
+        <img class="header__humburger-picture" src="./img/header__humburger.svg" 
+        alt="humburgar" width="28" height="17">
+      </a>
     </div>
+  </div>
   </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero__wrapper">
+          <div class="hero__inner">
+            <h2 class="hero__title">Start building with our APIs for absolutely free.</h2>
+            <form class="hero__form" action="" method="post">
+              <input class="hero__input" type="email" name="email" 
+              placeholder="Enter email address">
+              <button class="hero__btn" type="submit">Schedule a Demo</button>
+            </form>
+            <span class="hero__span">Have any questions?
+              <a class="hero__link" href="#">Contact Us</a>
+            </span>
+          </div>
+          <img class="hero__picture" src="./img/hero__phone.png" alt="phone">
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 
 </html>

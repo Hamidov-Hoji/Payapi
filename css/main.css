@@ -360,7 +360,7 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Public sans" sans-serif;
+  font-family: 'Public Sans';
   font-size: 16px;
   line-height: 1.5;
   scroll-behavior: smooth;
@@ -399,20 +399,72 @@ img {
   src: url("../fonts/dm-serif-display-v9-latin-regular.woff2") format("woff2"), url("../fonts/dm-serif-display-v9-latin-regular.woff") format("woff");
 }
 
-/* roboto-mono-regular - latin */
-@font-face {
-  font-family: "Roboto Mono";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("../fonts/roboto-mono-v13-latin-regular.woff2") format("woff2"), url("../fonts/roboto-mono-v13-latin-regular.woff") format("woff");
-}
-
 .container {
-  width: 1130px;
+  max-width: 1130px;
   margin: 0 auto;
   padding-right: 10px;
   padding-left: 10px;
+}
+
+.header {
+  background-color: #edf3f8;
+}
+
+.header__wrapper {
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.header__btn {
+  padding: 15px 25px;
+  border: none;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.115385px;
+  color: #fbfcfe;
+  background-color: #BA4270;
+  -webkit-box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+          box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.header__btn:active {
+  background-color: #da6d97;
+}
+
+.header__hamburger {
+  display: none;
+}
+
+@media only screen and (max-width: 680px) {
+  .header__btn {
+    display: none;
+  }
+  .header__hamburger {
+    display: block;
+  }
 }
 
 .visually-hidden {
@@ -426,7 +478,235 @@ img {
   width: 1px;
 }
 
+.logo-link {
+  display: inline-block;
+  text-decoration: none;
+  display: block;
+}
+
 .logo-link__picture {
   width: 135px;
   height: 38px;
+  margin-right: 64px;
+  display: inline-block;
+}
+
+.header-nav__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.header-nav-item ~ .header-nav-item {
+  margin-left: 40px;
+}
+
+.header-nav__link {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #36536B;
+  mix-blend-mode: normal;
+  opacity: 0.7;
+}
+
+.header-nav__link:active {
+  color: #36536B;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 680px) {
+  .header-nav__list {
+    display: none;
+  }
+}
+
+.hero {
+  background-color: #edf3f8;
+}
+
+.hero__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.hero__title {
+  margin: 0;
+  width: 546px;
+  height: 243px;
+  margin-right: 180px;
+  margin-bottom: 21px;
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 72px;
+  letter-spacing: -0.553846px;
+  color: #36536B;
+}
+
+.hero__form {
+  position: relative;
+}
+
+.hero__input {
+  margin-bottom: 16px;
+  padding-top: 15px;
+  padding-right: 275px;
+  padding-bottom: 15px;
+  padding-left: 27px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #36536B;
+  border: transparent;
+  background-color: #fbfcfe;
+  -webkit-box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25) opacity(1);
+          box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25) opacity(1);
+  border-radius: 24px;
+}
+
+.hero__btn {
+  position: absolute;
+  left: 350px;
+  border: none;
+  padding: 15px 25px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.115385px;
+  color: #fbfcfe;
+  background-color: #BA4270;
+  -webkit-box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+          box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.hero__btn:active {
+  background-color: #da6d97;
+}
+
+.hero__span {
+  margin-left: 30px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #6c8294;
+}
+
+.hero__link {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.header__humburger-picture {
+  width: 28px;
+  height: 17px;
+}
+
+@media only screen and (max-width: 1182px) {
+  .hero__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    flex-direction: column-reverse;
+  }
+  .hero__title {
+    margin: 0 auto;
+    margin-bottom: 22px;
+    width: 550px;
+    height: 122px;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+  }
+  .hero__input {
+    text-align: center;
+  }
+  .hero__span {
+    text-align: center;
+  }
+  .hero-inner {
+    padding-bottom: 100px;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .hero__title {
+    width: 320px;
+    height: 108px;
+    text-align: center;
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .hero__input {
+    width: 327px;
+    padding-top: 15px;
+    padding-right: 158px;
+    padding-bottom: 15px;
+    padding-right: 27px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 16px;
+  }
+  .hero__btn {
+    width: 327px;
+    margin-bottom: 24px;
+    display: block;
+    position: relative;
+    left: 0;
+  }
+  .hero__span {
+    text-align: center;
+  }
+  .hero__picture {
+    margin-left: 70px;
+    width: inherit;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .hero__picture {
+    width: 300px;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .hero__picture {
+    margin-left: 50px;
+    width: 250px;
+    height: auto;
+  }
+  .hero__input {
+    width: 300px;
+  }
+  .hero__btn {
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+  }
+  .hero__span {
+    text-align: center;
+  }
 }

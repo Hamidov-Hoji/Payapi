@@ -1,0 +1,29 @@
+.header-nav__list {
+  @include list-unstyled(none);
+  @include flex-style(center, flex-start)
+}
+
+.header-nav-item ~ .header-nav-item {
+  margin-left: 40px;
+}
+
+.header-nav__link {
+  @include link-unstyled;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #36536B;
+  mix-blend-mode: normal;
+  opacity: 0.7;
+}
+
+.header-nav__link:active {
+  color: #36536B;
+  opacity: 1;
+}
+
+@include breakpoint-down(680px) {
+  .header-nav__list {
+    display: none;
+  }
+}

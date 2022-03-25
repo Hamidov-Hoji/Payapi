@@ -1,0 +1,44 @@
+.header {
+  background-color: #edf3f8;
+}
+
+.header__wrapper {
+  padding-top: 40px;
+  @include flex-style(center, space-between)
+}
+
+.header__inner {
+  @include flex-style(center, flex-start)
+}
+
+.header__btn {
+  padding: 15px 25px;
+  border: none;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.115385px;
+  color: $color-white;
+  background-color: $color-btn;
+  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.header__btn:active {
+  background-color: #da6d97;
+}
+
+.header__hamburger {
+  display: none;
+}
+
+@include breakpoint-down(680px){
+  .header__btn {
+    display: none;
+  }
+
+  .header__hamburger {
+    display: block;
+  }
+}
