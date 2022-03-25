@@ -8,4 +8,9 @@
   height: 38px;
   margin-right: 64px;
   display: inline-block;
+  transition: 0.5s;
+}
+
+.logo-link__picture:hover {
+  transform: scale(1.5);
 }

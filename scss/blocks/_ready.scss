@@ -1,0 +1,57 @@
+.ready {
+  padding-top: 96px;
+  padding-bottom: 96px;
+  background-color: #edf3f8;
+}
+
+.ready__wrapper {
+  @include flex-style(center, space-between)
+}
+
+.ready__heading {
+  margin: 0;
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  color: $color-grey;
+}
+
+.ready__input {
+  position: relative;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: $color-grey;
+  opacity: 0.5;
+  padding: 16px 276px 14px 27px;
+  background-color: $color-white;
+  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  border-radius: 24px;
+  border: none;
+}
+
+.ready__btn {
+  position: absolute;
+  right: calc(50% - 555px);
+  padding: 15px 26px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: $color-white;
+  background: $color-btn;
+  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  border-radius: 24px;
+  border: none;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: rgb(151, 66, 63);
+  }
+
+  &:active {
+    cursor: pointer;
+    background: $color-btn;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  }
+}

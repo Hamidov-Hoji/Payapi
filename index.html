@@ -55,12 +55,15 @@
       <div class="container">
         <div class="hero__wrapper">
           <div class="hero__inner">
+
             <h2 class="hero__title">Start building with our APIs for absolutely free.</h2>
-            <form class="hero__form" action="" method="post">
+
+            <form class="hero__form" action="https://echo.htmlacademy.ru" method="post">
               <input class="hero__input" type="email" name="email" 
-              placeholder="Enter email address">
+              placeholder="Enter email address" required>
               <button class="hero__btn" type="submit">Schedule a Demo</button>
             </form>
+            
             <span class="hero__span">Have any questions?
               <a class="hero__link" href="#">Contact Us</a>
             </span>
@@ -145,15 +148,102 @@
       </div>
     </section>
 
-    <!-- ready -->
-    <section>
+    <!-- simple -->
+    <section class="simple">
+      <div class="container">
+        <div class="simple__wrapper">
+          <div class="simple__inner">
+            <h2 class="simple__heading">Simple UI & UX</h2>
+            <p class="simple__text">Our pre-built form is easy to integrate in your app or website's checkout flow and designed to optimize conversion.</p>
+          </div>
+          <img class="simple__image" src="./img/simple__phone.png" alt="Phone">
+          <img class="simple__img" src="./img/simple__secound-p.png" alt="Phone">
+        </div>
+      </div>
+    </section>
 
+    <!-- features -->
+    <section class="features">
+      <div class="container">
+        <div class="features__wrapper">
+          <ul class="features__list">
+            <li class="features__item--finances">
+              <h3 class="features__heading">Personal Finances</h3>
+              <p class="features__text">Consolidate financial data from multiple sources and categorize transactions up to 2 years of history. Analyze reports
+                to reconcile activities in your account.
+              </p>
+            </li>
+
+            <li class="features__item--banking">
+              <h3 class="features__heading">Banking & Coverage</h3>
+              <p class="features__text">With our platform, you can speed up account onboarding and support ongoing payments for checking, savings, credit card,
+                and brokerage accounts.
+              </p>
+            </li>
+
+            <li class="features__item--payments">
+              <h3 class="features__heading">Consumer Payments</h3>
+              <p class="features__text">It's easier to set up secure bank payments with us through a flow designed with the user experience in mind. Customers
+                could instantly authenticate their account.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ready -->
+    <section class="ready">
+      <div class="container">
+        <div class="ready__wrapper">
+          <h2 class="ready__heading">Ready to start?</h2>
+          <form action="https://echo.htmlacademy.ru" method="get">
+            <input class="ready__input" type="email" name="email" placeholder="Enter email address" required>
+            <button class="ready__btn">Schedule a Demo</button>
+          </form>
+        </div>
+      </div>
     </section>
   </main>
 
-   <footer>
-     <h2>sdjknsns</h2>
-   </footer>
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__inner">
+          <a class="logo-link" href="index.html">
+            <img class="logo-link__img" src="./img/footer__picture.svg" 
+            alt="Site logo" width="135" height="38">
+          </a>
+
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">Pricing</a>
+            </li>
+
+            <li class="footer__item">
+              <a class="footer__link" href="#">About</a>
+            </li>
+
+            <li class="footer__item">
+              <a class="footer__link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__link-img-wrap">
+          <a class="footer__link" href="#">
+            <img src="./img/footer__facebook.svg" alt="Facebook" width="24" height="24">
+          </a>
+          <a class="footer__link" href="#">
+            <img src="./img/footer__twiter.svg" alt="Twitter" width="24" height="24">
+          </a>
+          <a class="footer__link" href="#">
+            <img src="./img/footer__end.svg" alt="Linkedin" width="24" height="24">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>

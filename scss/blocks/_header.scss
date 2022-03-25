@@ -23,6 +23,11 @@
   box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
   border-radius: 24px;
   cursor: pointer;
+  transition: 0.5s;
+}
+
+.header__btn:hover {
+  background-color: rgb(151, 66, 63);
 }
 
 .header__btn:active {

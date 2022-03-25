@@ -448,6 +448,12 @@ img {
           box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
   border-radius: 24px;
   cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.header__btn:hover {
+  background-color: #97423f;
 }
 
 .header__btn:active {
@@ -494,6 +500,13 @@ img {
   height: 38px;
   margin-right: 64px;
   display: inline-block;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.logo-link__picture:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 .header-nav__list {
@@ -524,17 +537,30 @@ img {
   color: #36536B;
   mix-blend-mode: normal;
   opacity: 0.7;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.header-nav__link:hover {
+  color: blueviolet;
+  border-bottom: 1px solid;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 .header-nav__link:active {
   color: #36536B;
-  opacity: 1;
+  opacity: 1px solid blueviolet;
 }
 
 @media only screen and (max-width: 680px) {
   .header-nav__list {
     display: none;
   }
+}
+
+main {
+  background-color: #edf3f8;
 }
 
 .hero {
@@ -590,7 +616,7 @@ img {
 
 .hero__btn {
   position: absolute;
-  left: 350px;
+  left: 323px;
   border: none;
   padding: 15px 25px;
   font-weight: 700;
@@ -603,6 +629,12 @@ img {
           box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
   border-radius: 24px;
   cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.hero__btn:hover {
+  background-color: #97423f;
 }
 
 .hero__btn:active {
@@ -937,4 +969,339 @@ img {
   .easy__text {
     font-size: 10px;
   }
+}
+
+.simple__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.simple__heading {
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  color: #36536B;
+}
+
+.simple__text {
+  margin-right: 40px;
+  width: 445px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  color: #36536B;
+}
+
+.simple__img {
+  position: relative;
+  left: -100px;
+}
+
+.footer {
+  padding: 31px 0;
+  background-color: #36536B;
+  background-image: url("../../images/bg-image-body.png");
+  background-repeat: no-repeat;
+  background-size: 780px 780px;
+  background-position: calc(50% + 670px) -100px;
+}
+
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logo-link__img {
+  margin: 0 auto;
+  margin-right: 64px;
+}
+
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.footer__item ~ .footer__item {
+  margin-left: 40px;
+}
+
+.footer__link {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #fbfcfe;
+  opacity: 0.7;
+}
+
+.footer__link:active {
+  color: #36536B;
+  opacity: 1;
+}
+
+.footer__link-img-wrap {
+  width: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media only screen and (max-width: 623px) {
+  .footer__wrapper {
+    display: block;
+    text-align: center;
+  }
+  .logo-link {
+    padding-bottom: 40px;
+    margin: 0 auto;
+  }
+  .footer__inner {
+    display: block;
+  }
+  .footer__list {
+    display: block;
+  }
+  .footer__item ~ .footer__item {
+    margin: 0;
+    margin-top: 31px;
+  }
+  .footer__link-img-wrap {
+    margin: 0 auto;
+    margin-top: 39px;
+  }
+}
+
+.features {
+  padding-top: 100px;
+  background-color: #edf3f8;
+}
+
+.features__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.features__item--finances {
+  max-width: 350px;
+  text-align: center;
+}
+
+.features__item--finances::before {
+  margin: 0 auto;
+  width: 106px;
+  height: 106px;
+  display: block;
+  background-image: url("../../img/feature__finance.svg");
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.features__item--banking {
+  max-width: 350px;
+  text-align: center;
+}
+
+.features__item--banking::before {
+  margin: 0 auto;
+  width: 106px;
+  height: 106px;
+  display: block;
+  background-image: url("../../img/feature__banking.svg");
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.features__item--payments {
+  max-width: 350px;
+  text-align: center;
+}
+
+.features__item--payments::before {
+  margin: 0 auto;
+  width: 106px;
+  height: 106px;
+  display: block;
+  background-image: url("../../img/feature__consumer.svg");
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.features__heading {
+  margin: 0;
+  margin-bottom: 16px;
+  margin-top: 32px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #36536B;
+}
+
+.features__text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #36536B;
+}
+
+@media only screen and (max-width: 1075px) {
+  .features__item--finances {
+    width: 223px;
+    height: 329px;
+  }
+  .features__item--banking {
+    width: 223px;
+    height: 329px;
+  }
+  .features__item--payments {
+    width: 223px;
+    height: 329px;
+  }
+  .features__text {
+    width: 223px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 736px) {
+  .features__list {
+    display: block;
+  }
+  .features__item--finances {
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .features__item--banking {
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .features__item--payments {
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+}
+
+.ready {
+  padding-top: 96px;
+  padding-bottom: 96px;
+  background-color: #edf3f8;
+}
+
+.ready__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.ready__heading {
+  margin: 0;
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  color: #36536B;
+}
+
+.ready__input {
+  position: relative;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #36536B;
+  opacity: 0.5;
+  padding: 16px 276px 14px 27px;
+  background-color: #fbfcfe;
+  -webkit-box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+          box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  border-radius: 24px;
+  border: none;
+}
+
+.ready__btn {
+  position: absolute;
+  right: calc(50% - 555px);
+  padding: 15px 26px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #fbfcfe;
+  background: #BA4270;
+  -webkit-box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+          box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  border-radius: 24px;
+  border: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.ready__btn:hover {
+  background-color: #97423f;
+}
+
+.ready__btn:active {
+  cursor: pointer;
+  background: #BA4270;
+  -webkit-box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+          box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
 }
