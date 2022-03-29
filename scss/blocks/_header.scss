@@ -51,4 +51,8 @@
   .header__hamburger {
     display: block;
   }
+
+  .header__wrapper {
+    @include flex-style(flex-start, space-between)
+  }
 }
