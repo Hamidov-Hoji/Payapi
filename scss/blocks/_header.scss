@@ -53,6 +53,6 @@
   }
 
   .header__wrapper {
-    @include flex-style(flex-start, space-between)
+    @include flex-style(start, space-between)
   }
 }
