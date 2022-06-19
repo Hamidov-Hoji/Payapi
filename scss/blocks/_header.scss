@@ -53,6 +53,14 @@
   }
 
   .header__wrapper {
-    @include flex-style(start, space-between)
+    @include flex-style(center, space-between);
+  }
+
+  .header__humburger-picture {
+    padding: 0;
+  }
+
+  .logo-link {
+    padding: 0;
   }
 }
